@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hellodoc.abdullah.hellodoc">
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".signup" />
+        <activity android:name=".Signin" />
+        <activity android:name=".welcome" />
+        <activity
+            android:name=".DocHome"
+            android:label="@string/title_activity_doc_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".doc_list" />
+        <activity android:name=".DocDetail" />
+        <activity android:name=".Appoint_Status" />
+
+        <service
+            android:name=".Service.ListenApp"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

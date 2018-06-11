@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+
+    android:layout_height="fill_parent"
+    tools:context=".Signin">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPhone"
+            android:hint="Phone Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#0c4fa6"
+            android:text="0988123344"
+            android:textColor="#0c4fa6"
+            android:textSize="34sp"
+            android:inputType="phone"
+            app:met_baseColor="#0c4fa6"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/greenapp"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#0c4fa6"
+            android:text="123"
+            android:textColor="#0c4fa6"
+            android:textSize="34sp"
+            android:inputType="textPassword"
+            app:met_baseColor="#0c4fa6"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@color/greenapp"
+            app:met_singleLineEllipsis="true"
+            />
+
+        <com.rey.material.widget.CheckBox
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:id="@+id/Rem"
+    style="@style/Material.Drawable.CheckBox"
+    android:text="Remember Me"
+    android:gravity="center_vertical"
+    android:textColor="@color/blueapp"
+    app:cbd_strokeColor="@color/blueapp"
+
+
+    />
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSignIn"
+            android:text="Sign In"
+            android:textColor="@android:color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:buttonColor="@color/blueapp"
+            app:shadowColor="@android:color/black"
+            app:shadowHeight="5dp"
+            />
+    </LinearLayout>
+
+
+
+
+    </ScrollView>
+</RelativeLayout>

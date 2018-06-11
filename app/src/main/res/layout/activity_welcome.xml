@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".welcome">
+
+
+    <ImageView
+        android:padding="10dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="370dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:text="Hello Doctor is 24/7 service having Doctor's Appointments at just finger tips"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnSignIn"
+        android:text="Sign In"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:buttonColor="#0c4fa6"
+        app:shadowColor="@android:color/black"
+        app:shadowHeight="5dp">
+
+    </info.hoang8f.widget.FButton>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnSignUp"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:buttonColor="@color/blueapp"
+        app:shadowColor="@android:color/black"
+        app:shadowHeight="5dp">
+
+    </info.hoang8f.widget.FButton>
+</LinearLayout>
+
+</ScrollView>
